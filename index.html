@@ -11,12 +11,11 @@
 body{margin:0;background:#F7F7F5}
 a{color:#0F2A47}a:hover{color:#B87333}
 input,select,textarea,button{font-family:inherit}
-.igea-carousel{border-radius:10px}.igea-viewport{overflow:hidden;border-radius:10px}
+.igea-carousel{overflow:hidden;border-radius:10px}
 .igea-track{display:flex;width:400%;animation:igea-slide 16s ease-in-out infinite}
 .igea-slide{width:25%;flex:none}
 .igea-carousel:hover .igea-track{animation-play-state:paused}
-@keyframes igea-slide{0%{transform:translateX(0) scale(1)}27%{transform:translateX(0) scale(1);animation-timing-function:cubic-bezier(.7,0,.2,1.12)}30%{transform:translateX(-12.5%) scale(.94)}33%{transform:translateX(-25%) scale(1)}60%{transform:translateX(-25%) scale(1);animation-timing-function:cubic-bezier(.7,0,.2,1.12)}63%{transform:translateX(-37.5%) scale(.94)}66%{transform:translateX(-50%) scale(1)}93%{transform:translateX(-50%) scale(1);animation-timing-function:cubic-bezier(.7,0,.2,1.12)}96%{transform:translateX(-62.5%) scale(.94)}100%{transform:translateX(-75%) scale(1)}}
-.igea-track{animation-duration:15s}.igea-slide>div{box-shadow:0 18px 40px rgba(0,0,0,.28)}.igea-bar-wrap{height:3px;background:rgba(247,247,245,.15);margin:14px 0 0;overflow:hidden;border-radius:2px}.igea-bar{height:100%;width:0;background:#B87333;animation:igea-bar 5s linear infinite}@keyframes igea-bar{from{width:0}to{width:100%}}.igea-dots{display:flex;gap:8px;margin-top:12px}.igea-dot{height:8px;width:8px;border-radius:4px;background:rgba(247,247,245,.35);animation:15s infinite}.igea-dot.d1{animation-name:igea-d1}.igea-dot.d2{animation-name:igea-d2}.igea-dot.d3{animation-name:igea-d3}@keyframes igea-d1{0%,30%{width:28px;background:#F7F7F5}33%,97%{width:8px;background:rgba(247,247,245,.35)}100%{width:28px;background:#F7F7F5}}@keyframes igea-d2{0%,30%{width:8px;background:rgba(247,247,245,.35)}33%,63%{width:28px;background:#F7F7F5}66%,100%{width:8px;background:rgba(247,247,245,.35)}}@keyframes igea-d3{0%,63%{width:8px;background:rgba(247,247,245,.35)}66%,97%{width:28px;background:#F7F7F5}100%{width:8px;background:rgba(247,247,245,.35)}}.igea-carousel:hover .igea-bar,.igea-carousel:hover .igea-dot{animation-play-state:paused}@media (prefers-reduced-motion: reduce){.igea-bar,.igea-dot{animation:none}}
+@keyframes igea-slide{0%,27%{transform:translateX(0)}33%,60%{transform:translateX(-25%)}66%,93%{transform:translateX(-50%)}100%{transform:translateX(-75%)}}
 .igea-marquee-box{overflow:hidden;flex:1 1 400px;min-width:0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .igea-marquee{display:flex;width:max-content;animation:igea-marq 22s linear infinite}
 .igea-marquee span{padding:0 40px;font-size:22px;font-weight:700;white-space:nowrap;color:#0F2A47}
@@ -62,7 +61,6 @@ input,select,textarea,button{font-family:inherit}
 </div>
 <!-- ingredient file carousel -->
 <div class="igea-carousel" aria-label="Ingredient files" style="flex: 1 1 380px; min-width: 0; max-width: 520px">
-<div class="igea-viewport">
 <div class="igea-track">
 <div class="igea-slide">
 <div style="background: #17385C; color: #F7F7F5; border-top: 3px solid #C8EE5A; padding: 28px; display: flex; flex-direction: column; gap: 18px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; height: 300px; box-sizing: border-box">
@@ -93,9 +91,6 @@ input,select,textarea,button{font-family:inherit}
 </div>
 </div>
 </div>
-</div>
-<div class="igea-bar-wrap" aria-hidden="true"><div class="igea-bar"></div></div>
-<div class="igea-dots" aria-hidden="true"><span class="igea-dot d1"></span><span class="igea-dot d2"></span><span class="igea-dot d3"></span></div>
 </div>
 </div>
 </section>
